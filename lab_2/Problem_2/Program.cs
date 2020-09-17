@@ -11,6 +11,7 @@ class Program
 
         Console.Write("k = ");
         int k = int.Parse(Console.ReadLine());
+        //jgkdjg
 
         int n = strArray.Length;
         int[] sumArray = new int[n];
