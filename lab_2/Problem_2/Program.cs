@@ -1,48 +1,37 @@
-﻿using System;
+﻿
+using System;
 
-class Program
-{
-    static void Main(string[] args)
+
+    class Program
     {
-        Console.WriteLine("Input numbers:");
-
-        string[] strArray = Console.ReadLine().Split(' ');
-        int[] numArray = ParseArray(strArray);
-
-        Console.Write("k = ");
-        int k = int.Parse(Console.ReadLine());
-        //jgkdjg
-
-        int n = strArray.Length;
-        int[] sumArray = new int[n];
-
-        for (int i = 0; i < k; ++i)
+        static void Main(string[] args)
         {
-            int tmp = numArray[n - 1];
+        Console.WriteLine("input numbers:");
+        string[] array = Console.ReadLine().Split(' ');
+        Console.WriteLine("input n times:");
+        int n = int.Parse(Console.ReadLine());
+            int size = array.Length;
 
-            for (int j = n - 1; j > 0; --j)
-                numArray[j] = numArray[j - 1];
+            int[] numbers = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+            numbers[i] = int.Parse(array[i]);
+            }
 
-            numArray[0] = tmp;
+            int[] sum = new int[size];
+            for (int j = 1; j<= n; j++)
+            {
+                for (int i = 0; i <= size - 1; i++)
+                { 
+                    sum[(i + j) % size] += numbers[i];
+                }
+            }
 
-            for (int j = 0; j < n; ++j)
-                sumArray[j] += numArray[j];
-        }
+            foreach (int item in sum)
+            {
+                Console.Write("{0} ", item);
+            }
 
-        foreach (int sum in sumArray)
-            Console.Write($"{sum} ");
-        Console.WriteLine();
-
-        Console.ReadKey();
+            Console.ReadKey();
     }
-
-    static int[] ParseArray(string[] strArray)
-    {
-        int[] numArray = new int[strArray.Length];
-
-        for (int i = 0; i < strArray.Length; ++i)
-            numArray[i] = int.Parse(strArray[i]);
-
-        return numArray;
     }
-}
