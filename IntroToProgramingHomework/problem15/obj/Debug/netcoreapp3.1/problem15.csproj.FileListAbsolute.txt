@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\bin\Debug\netcoreapp3.1\problem15.exe
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\bin\Debug\netcoreapp3.1\problem15.deps.json
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\bin\Debug\netcoreapp3.1\problem15.runtimeconfig.json
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\bin\Debug\netcoreapp3.1\problem15.runtimeconfig.dev.json
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\bin\Debug\netcoreapp3.1\problem15.dll
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\bin\Debug\netcoreapp3.1\problem15.pdb
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\obj\Debug\netcoreapp3.1\problem15.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\obj\Debug\netcoreapp3.1\problem15.AssemblyInfo.cs
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\obj\Debug\netcoreapp3.1\problem15.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\obj\Debug\netcoreapp3.1\problem15.dll
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\obj\Debug\netcoreapp3.1\problem15.pdb
+C:\Users\User\Desktop\ООП\IntroToProgramingHomework\problem15\obj\Debug\netcoreapp3.1\problem15.genruntimeconfig.cache
