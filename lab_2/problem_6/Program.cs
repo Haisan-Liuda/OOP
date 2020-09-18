@@ -1,54 +1,44 @@
 ﻿using System;
-    class Problem_6
+
+class problem_6
+{
+    
+    static void Main()
     {
-        static void printArray(int[] array)
+        Console.WriteLine("input numbers:");
+        string[] array = Console.ReadLine().Split(' ');
+        int size = array.Length;
+
+        int[] numbers = new int[size];
+        for (int i = 0; i < size; i++)
         {
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine("\n");
+            numbers[i] = int.Parse(array[i]);
         }
-        static void Main()
+       
+
+        int m= 0, index = 0,max = 0;
+        for (int i = 0; i < array.Length - 1; i++)
         {
-            int n;
-            int[] array;
-            Console.Write("Input size: ");
-            n = int.Parse(Console.ReadLine());
-            array = new int[n];
-
-            for (int i = 0; i < array.Length; i++)
+           m = 0;
+            for (int j = i + 1; j < array.Length; j++)
             {
-                Console.Write("array[" + i + "]= ");
-                array[i] = int.Parse(Console.ReadLine());
-            }
-
-            printArray(array);
-
-            int count = 0, index = 0, max= 0;
-            for (int i = 0; i < array.Length - 1; i++)
-            {
-                count = 0;
-                for (int j = i + 1; j < array.Length; j++)
+                if (array[i] == array[j])
                 {
-                    if (array[i] == array[j])
-                    {
-                        count++;
-                    }
-                    else break;
+                    m++;
                 }
+                else break;
+            }
 
-                if (count > max)
-                {
-                    max = count;
-                    index = i;
-                }
-            }
-            for (int i = index; i <= index + max; i++)
+            if (m > max)
             {
-                Console.Write(array[i] + " ");
+                max = m;
+                index = i;
             }
-            Console.WriteLine("\n");
         }
+        for (int i = index; i <= index + max; i++)
+        {
+            Console.Write(array[i] + " ");
+        }
+        Console.WriteLine("\n");
     }
-
+}

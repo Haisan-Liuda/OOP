@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-    namespace Problem_3
+    namespace Problem_4
 {
     class Program
     {

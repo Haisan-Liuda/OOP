@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\ООП\\git_labs\\lab_2\\Problem_3\\Problem_4.csproj",
-      "projectName": "Problem_4",
-      "projectPath": "C:\\Users\\User\\Desktop\\ООП\\git_labs\\lab_2\\Problem_3\\Problem_4.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\ООП\\git_labs\\lab_2\\problem_8\\problem_8.csproj",
+      "projectName": "problem_8",
+      "projectPath": "C:\\Users\\User\\Desktop\\ООП\\git_labs\\lab_2\\problem_8\\problem_8.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\ООП\\git_labs\\lab_2\\Problem_3\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\ООП\\git_labs\\lab_2\\problem_8\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

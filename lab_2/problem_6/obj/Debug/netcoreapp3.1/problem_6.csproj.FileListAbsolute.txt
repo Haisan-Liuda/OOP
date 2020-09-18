@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\bin\Debug\netcoreapp3.1\problem_6.exe
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\bin\Debug\netcoreapp3.1\problem_6.deps.json
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\bin\Debug\netcoreapp3.1\problem_6.runtimeconfig.json
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\bin\Debug\netcoreapp3.1\problem_6.runtimeconfig.dev.json
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\bin\Debug\netcoreapp3.1\problem_6.dll
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\bin\Debug\netcoreapp3.1\problem_6.pdb
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\obj\Debug\netcoreapp3.1\problem_6.csprojAssemblyReference.cache
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\obj\Debug\netcoreapp3.1\problem_6.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\obj\Debug\netcoreapp3.1\problem_6.AssemblyInfo.cs
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\obj\Debug\netcoreapp3.1\problem_6.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\obj\Debug\netcoreapp3.1\problem_6.dll
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\obj\Debug\netcoreapp3.1\problem_6.pdb
+C:\Users\User\Desktop\ООП\git_labs\lab_2\problem_6\obj\Debug\netcoreapp3.1\problem_6.genruntimeconfig.cache
