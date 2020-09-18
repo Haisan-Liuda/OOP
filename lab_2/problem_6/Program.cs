@@ -9,14 +9,14 @@ class problem_6
         string[] array = Console.ReadLine().Split(' ');
         int size = array.Length;
 
-        int[] numbers = new int[size];
+        int[] A = new int[size];
         for (int i = 0; i < size; i++)
         {
-            numbers[i] = int.Parse(array[i]);
+            A[i] = int.Parse(array[i]);
         }
        
 
-        int m= 0, index = 0,max = 0;
+        int m  = 0, index = 0,max = 0;
         for (int i = 0; i < array.Length - 1; i++)
         {
            m = 0;

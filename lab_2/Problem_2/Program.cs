@@ -12,10 +12,10 @@ using System;
         int n = int.Parse(Console.ReadLine());
             int size = array.Length;
 
-            int[] numbers = new int[size];
+            int[] A = new int[size];
             for (int i = 0; i < size; i++)
             {
-            numbers[i] = int.Parse(array[i]);
+            A[i] = int.Parse(array[i]);
             }
 
             int[] sum = new int[size];
@@ -23,7 +23,7 @@ using System;
             {
                 for (int i = 0; i <= size - 1; i++)
                 { 
-                    sum[(i + j) % size] += numbers[i];
+                    sum[(i + j) % size] += A[i];
                 }
             }
 

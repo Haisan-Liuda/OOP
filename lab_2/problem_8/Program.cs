@@ -9,32 +9,31 @@ class problem_8
         string[] array = Console.ReadLine().Split(' ');
         int size = array.Length;
 
-        int[] numbers = new int[size];
+        int[] A = new int[size];
         for (int i = 0; i < size; i++)
         {
-            numbers[i] = int.Parse(array[i]);
+            A[i] = int.Parse(array[i]);
         }
-        int n = 0, m = 0;
-        int max = -1,max_1=-1;
+        
+        int max =A[0], count = 1;
         for (int i = 0; i < size; i++)
         {
+            int n = A[i], m = 1;
             for (int j = i + 1; j < size; j++)
             {
-                if (array[i] == array[j]) 
+                if (A[j] == n)
                 {
-                    m++; 
-                }
-                if (max_1 < m)
-                {
-                    max_1 = m;
-                    max = n;
+                   m++;
                 }
             }
-            n = i;
-            m = 1;
+
+            if (m > count)
+            {
+                max= n;
+                count = m;
+            }
         }
-        Console.Write($"s={max} l={max_1}\n");
-        Console.Write($"number is {array[max_1]}");
+        Console.WriteLine("{0}", max);
         Console.ReadKey();
     }
 }
