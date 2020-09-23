@@ -50,49 +50,39 @@ namespace problem_2
                 this.Age = Age;
             }
         }
-        class Family
-        {
-            private List<Person> FamilyMembers;
-
-            public Family()
-            {
-                FamilyMembers = new List<Person>();
-            }
-
-            public void AddMember(Person Member)
-            {
-                FamilyMembers.Add(Member);
-            }
-
-            public Person GetOldestMember()
-            {
-                int maxAge = FamilyMembers[0].age;
-                Person Oldest = FamilyMembers[0];
-                foreach (var Member in FamilyMembers)
-                {
-                    if (Member.age > maxAge)
-                    {
-                        maxAge = Member.age;
-                        Oldest = Member;
-                    }
-                }
-                return Oldest;
-            }
-        }
+       
 
         static void Main(string[] args)
         {
             Console.WriteLine("input number:");
             int x = int.Parse(Console.ReadLine());
-            Family NewFamily = new Family();
+            List<Person> Persona = new List<Person>();
             for (int i = 0; i < x; i++)
             {
                 Console.WriteLine("input name and age:");
                 string[] input = Console.ReadLine().Split(' ');
-                NewFamily.AddMember(new Person(input[0], int.Parse(input[1])));
+                Persona.Add(new Person(input[0], int.Parse(input[1])));
             }
-            Person oldestMember = NewFamily.GetOldestMember();
-            Console.WriteLine($"{oldestMember.name} {oldestMember.age}");
+            for (int i = 0; i < x; i++)
+            {
+                for (int j = i + 1; j < x; j++)
+                {
+                    if (string.Compare(Persona[i].name, Persona[j].name) > 0)
+                    {
+                        Person tmp = Persona[i];
+                        Persona[i] = Persona[j];
+                        Persona[j] = tmp;
+                    }
+                }
+            }
+
+            foreach (var person in Persona)
+            {
+                if (person.age > 30)
+                {
+                    Console.WriteLine($"{person.name} - {person.age}");
+                }
+            }
 
             Console.ReadKey();
         }
